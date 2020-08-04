@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../dist/css/main.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="captured-moments p-section">
+    <div class="container">
+      <header class="text-center">
+        <h2 class="title-header text-brown">
+          Captured Moments
+        </h2>
+      </header>
+      <hr>
+      <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }'>
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+          <img src="../images/moments/immg.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/img4.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/img3.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/img2.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/img-1.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/imges-js6.png" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/imges-js5.png" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/imges-js4.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/imges-js3.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/imges-js2.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/imges-js1.jpg" style="width:100%; height: 100%;" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../verdors/js/masonry.pkgd.min.js"></script>
+
+  <script>
+    // vanilla JS
+    // init with element
+    var grid = document.querySelector('.grid');
+    var msnry = new Masonry(grid, {
+      // options...
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true,
+      fitWidth: true
+    });
+    // // bind event
+    // $grid.masonry('on', 'layoutComplete', function () {
+    //   console.log('layout is complete');
+    // });
+    // // trigger initial layout
+    // $grid.masonry();
+
+  </script>
+</body>
+
+</html>
