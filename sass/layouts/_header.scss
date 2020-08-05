@@ -1,0 +1,109 @@
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  .sliders {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+
+    &-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      &__bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .slider-bg {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .hero-slide-overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: rgba(130, 160, 150, 0.3);
+        }
+      }
+
+      &.isActive {
+        visibility: visible;
+      }
+    }
+  }
+
+  &-logo-wedding {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    opacity: 0.3;
+    vertical-align: middle;
+    max-width: 90%;
+    padding: 70px 0;
+    img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 60vh;
+    }
+  }
+
+  .next-slide {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+    &-item {
+      cursor: pointer;
+      list-style: none;
+      display: block;
+      margin: 0 10px 10px 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 3px solid white;
+
+      &.isActive {
+        background-color: #fff;
+      }
+    }
+  }
+  &-action {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+    text-transform: uppercase;
+    animation: header-actiont-up 1.5s infinite linear;
+
+    .hero-button {
+      color: white;
+      opacity: 0.4;
+      text-decoration: none;
+      font-size: 0.75rem;
+      transition: all 0.4s ease;
+      &:hover {
+        opacity: 0.75;
+      }
+    }
+  }
+}

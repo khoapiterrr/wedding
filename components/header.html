@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="../verdors/css/all.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="../dist/css/main.min.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo-wedding">
+      <img src="../images/hero-logo.png" alt="logo-heading">
+    </div>
+
+    <canvas></canvas>
+    <div id="sliders" class="sliders">
+      <div class="sliders-item isActive">
+        <div class="sliders-item__bg">
+          <img src="../images/hero3.jpg" alt="" class="slider-bg">
+          <div class="hero-slide-overlay"></div>
+        </div>
+
+      </div>
+      <div class="sliders-item ">
+        <div class="sliders-item__bg">
+          <img src="../images/hero2.jpg" alt="" class="slider-bg">
+          <div class="hero-slide-overlay"></div>
+        </div>
+
+      </div>
+      <div class="sliders-item">
+        <div class="sliders-item__bg">
+          <img src="../images/hero1.jpg" alt="" class="slider-bg">
+          <div class="hero-slide-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <div class="next-slide">
+      <ul>
+        <li data-slider-id="0" class="next-slide-item isActive"></li>
+        <li data-slider-id="1" class="next-slide-item"></li>
+        <li data-slider-id="2" class="next-slide-item"></li>
+      </ul>
+    </div>
+    <div class="header-action">
+      <a href="#intro" class="hero-button anchor-link">
+        <span>Enter Site</span><br> <i class="fas fa-angle-double-down"></i>
+      </a>
+    </div>
+  </header>
+  <script src="../dist/js/canvas.js"></script>
+  <script src="../dist/js/slide.js"></script>
+</body>
+
+
+</html>

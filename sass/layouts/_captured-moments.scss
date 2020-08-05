@@ -1,4 +1,10 @@
 .grid-sizer,
 .grid-item {
   width: 25%;
+  padding: 5px 10px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 }
