@@ -41,6 +41,7 @@
           margin: 0 1.5em;
           a {
             text-decoration: none;
+            text-transform: uppercase;
             color: $text-color;
             transition: all 0.25s ease-in-out;
             span &::after {

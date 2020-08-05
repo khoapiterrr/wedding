@@ -1,0 +1,27 @@
+.bg-music {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 999;
+  .btn-music {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: $color-web-2;
+
+    #iframeMP3 {
+      position: absolute;
+      bottom: 110%;
+      left: 2%;
+
+      &.ishidden {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}
