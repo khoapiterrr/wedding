@@ -1,0 +1,28 @@
+.countdown-time {
+  background-color: $color-bg-time;
+
+  .time {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      display: inline-block;
+      margin: 0 1rem;
+      width: 5rem;
+      text-align: center;
+      big {
+        display: block;
+        font-size: 400%;
+        font-style: italic;
+        line-height: 1;
+      }
+      small {
+        display: block;
+        margin-top: 1rem;
+        font-size: 100%;
+        font-style: italic;
+        line-height: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.intro {
+  .intro-couple {
+    display: flex;
+    justify-content: center;
+    &-img {
+      font-size: 1.2rem;
+    }
+  }
+
+  .bg-combine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -10,6 +10,18 @@
 .text-center {
   text-align: center;
 }
+.text-uppercase {
+  text-transform: uppercase;
+}
 .text-brown {
   color: $color-web;
+}
+.mb-4 {
+  margin-bottom: 4rem !important;
+}
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+.py-60 {
+  padding: 60px 0;
 }
