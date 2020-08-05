@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', (e) => {
   const sliders = document.getElementById('sliders').children;
   const nextSlider = document.getElementsByClassName('next-slide-item');
-  const slidersInterval = setIntervalSlider(sliders, nextSlider, 3000);
+  let slidersInterval = setIntervalSlider(sliders, nextSlider, 3000);
+  console.log(slidersInterval, 'slidersInterval id');
   //setOnclick next slider
   Array.from(nextSlider).map((element) => {
     element.onclick = function () {
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         //update interval time
         clearInterval(slidersInterval);
         slidersInterval = setIntervalSlider(sliders, nextSlider, 3000);
+        console.log(slidersInterval, 'slidersInterval id');
       }
     };
   });
