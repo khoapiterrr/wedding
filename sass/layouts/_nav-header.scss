@@ -57,9 +57,14 @@
               transition: all 0.25s ease-in-out;
             }
           }
-          &:hover a::after {
-            background-color: $color-web-2;
-            transition: all 0.25s ease-in-out;
+          &:hover {
+            a {
+              color: $color-black;
+              &::after {
+                background-color: $color-web-2;
+                transition: all 0.25s ease-in-out;
+              }
+            }
           }
         }
       }

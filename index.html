@@ -20,28 +20,28 @@
 
   <header class="header">
     <div class="header-logo-wedding">
-      <img src="./images/hero-logo.png" alt="logo-heading">
+      <img class="lazyload" data-sizes="auto" data-srcset="./images/hero-logo.png" alt="logo-heading">
     </div>
 
     <canvas></canvas>
     <div id="sliders" class="sliders">
       <div class="sliders-item isActive">
         <div class="sliders-item__bg">
-          <img src="./images/hero3.jpg" alt="" class="slider-bg">
+          <img data-srcset="./images/hero3.jpg" alt="" class="slider-bg lazyload">
           <div class="hero-slide-overlay"></div>
         </div>
 
       </div>
       <div class="sliders-item ">
         <div class="sliders-item__bg">
-          <img src="./images/hero2.jpg" alt="" class="slider-bg">
+          <img data-srcset="./images/hero2.jpg" alt="" class="slider-bg lazyload">
           <div class="hero-slide-overlay"></div>
         </div>
 
       </div>
       <div class="sliders-item">
         <div class="sliders-item__bg">
-          <img src="./images/hero1.jpg" alt="" class="slider-bg">
+          <img data-srcset="./images/hero1.jpg" alt="" class="slider-bg lazyload">
           <div class="hero-slide-overlay"></div>
         </div>
       </div>
@@ -62,7 +62,8 @@
   <div id="nav-header" class="nav-header">
     <div class="container side-header">
       <h1 class="header-logo">
-        <a href=""><img src="../images/header-logo-sm.png" alt="logo-wedding"></a>
+        <a href=""><img class="lazyload" data-sizes="auto" data-srcset="../images/header-logo-sm.png"
+            alt="logo-wedding"></a>
       </h1>
       <nav class="side-navigation">
         <button class="is-table"> <span class="fa fa-navicon"></span>
@@ -89,18 +90,18 @@
       <div class="intro-couple mb-4">
         <div class="groom-info">
           <div class="intro-couple-img">
-            <img src="./images/intro-groom.png" alt="">
+            <img class="lazyload" data-sizes="auto" data-srcset="./images/intro-groom.png" alt="">
             <p class="text-uppercase text-center"><i> Handsome boy</i></p>
           </div>
         </div>
         <div class="bg-combine">
           <div class="intro-couple-img-and">
-            <img class="contect-center" src="./images/intro-separator.png" alt="">
+            <img class="contect-center lazyload" data-sizes="auto" data-srcset="./images/intro-separator.png" alt="">
           </div>
         </div>
         <div class="bride-info">
           <div class="intro-couple-img">
-            <img src="./images/intro-bride.png" alt="">
+            <img class="lazyload" data-sizes="auto" data-srcset="./images/intro-bride.png" alt="">
             <p class="text-uppercase text-center"><i> Beautiful Girl</i></p>
           </div>
         </div>
@@ -152,7 +153,7 @@
     <div class="container">
       <div class="about-us">
         <div class="about-us-item img-groom">
-          <img src="./images/about-groom-540x405.jpg" alt="">
+          <img class="lazyload" data-sizes="auto" data-srcset="./images/about-groom-540x405.jpg" alt="">
         </div>
         <div class="about-us-item about-groom">
           <div class="about-us-item__content">
@@ -183,7 +184,7 @@
           </div>
         </div>
         <div class="about-us-item img-bride">
-          <img src="./images/about-bride-540x405.jpg" alt="">
+          <img class="lazyload" data-sizes="auto" data-srcset="./images/about-bride-540x405.jpg" alt="">
         </div>
         <div class="about-us-item about-bride">
           <div class="about-us-item__content">
@@ -228,12 +229,12 @@
           <div class="party-item">
             <div class="party-item-box">
               <div class="item-photo">
-                <img width="540" height="270" src="./images/event-ceremony-540x270.jpg"
-                  class="attachment-grid size-grid" alt=""
+                <img width="540" height="270" class="lazyload" data-sizes="auto"
+                  data-srcset="./images/event-ceremony-540x270.jpg" class="attachment-grid size-grid" alt=""
                   srcset="./images/event-ceremony-540x270.jpg 540w, ./images/event-ceremony-300x150.jpg 300w, ./images/event-ceremony-768x384.jpg 768w, ./images/event-ceremony-1024x512.jpg 1024w, ./images/event-ceremony.jpg 1080w"
                   sizes="(max-width: 540px) 100vw, 540px">
                 <div class="icon-event">
-                  <img src="./images/event-icon-ceremony.png" alt="">
+                  <img class="lazyload" data-sizes="auto" data-srcset="./images/event-icon-ceremony.png" alt="">
                 </div>
               </div>
               <div class="item-content">
@@ -252,12 +253,12 @@
           <div class="party-item">
             <div class="party-item-box">
               <div class="item-photo">
-                <img width="540" height="270" src="./images/event-party-540x270.jpg" class="attachment-grid size-grid"
-                  alt=""
+                <img width="540" height="270" class="lazyload" data-sizes="auto"
+                  data-srcset="./images/event-party-540x270.jpg" class="attachment-grid size-grid" alt=""
                   srcset="./images/event-party-540x270.jpg 540w, ./images/event-party-300x150.jpg 300w, ./images/event-party-768x384.jpg 768w, ./images/event-party-1024x512.jpg 1024w, ./images/event-party.jpg 1080w"
                   sizes="(max-width: 540px) 100vw, 540px">
                 <div class="icon-event">
-                  <img src="./images/event-icon-party.png" alt="">
+                  <img class="lazyload" data-sizes="auto" data-srcset="./images/event-icon-party.png" alt="">
                 </div>
               </div>
               <div class="item-content">
@@ -343,6 +344,80 @@
 
   </section>
 
+  <section class="captured-moments p-section">
+    <div class="container">
+      <header class="text-center">
+        <h2 class="title-header text-brown">
+          Captured Moments
+        </h2>
+      </header>
+
+      <div class="filter-photos mt-2">
+        <div class="filter-photos-item isActive">
+          <a href="javascript:void(0)">All photos</a>
+        </div>
+        <div class="filter-photos-item">
+          <a href="javascript:void(0)">ENGAGEMENT</a>
+        </div>
+        <div class="filter-photos-item">
+          <a href="javascript:void(0)">PRE-WEDDING</a>
+        </div>
+        <div class="filter-photos-item">
+          <a href="javascript:void(0)">WITH FRIENDS</a>
+        </div>
+      </div>
+      <!-- data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".grid-sizer" }' -->
+      <div class="grid-moment-wedding mb-2">
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding1.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding2.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding3.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding4.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding5.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding6.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding7.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding8.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding9.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding10.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding11.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding12.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding13.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding14.jpg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="../images/moments/moment-wedding15.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="our-blog p-section">
     <header class="text-center mb-2">
       <h2 class="title-header text-brown">
@@ -421,10 +496,16 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"
+    integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg=="
+    crossorigin="anonymous" async=""></script>
+  <script src="../verdors/js/masonry.pkgd.min.js"></script>
   <script src="./dist/js/canvas.js"></script>
   <script src="./dist/js/slide.js"></script>
   <script src="./dist/js/scroll.js"></script>
-  <script src="./dist/js/common.js"></script>
+  <script src="./dist/js/common.js" defer=""></script>
+
 </body>
 
 </html>

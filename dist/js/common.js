@@ -36,7 +36,21 @@ document.addEventListener('DOMContentLoaded', (e) => {
     minutes.innerText = getTime(min);
     seconds.innerText = getTime(sec);
   }, 1000);
+  console.log(1);
 });
+
 const getTime = (time) => {
   return time >= 10 ? time : '0' + time;
+};
+//mosanry
+window.onload = function () {
+  var grid = document.querySelector('.grid-moment-wedding');
+
+  var msnry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    fitWidth: true,
+    transitionDuration: 0,
+  });
 };
