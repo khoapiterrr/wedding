@@ -1,0 +1,106 @@
+.nav-header {
+  position: relative;
+  background-color: #fff;
+  height: 70px;
+  border: 1px solid #e5e5e5;
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .side-header {
+    position: relative;
+    height: 100%;
+    .header-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 70px;
+      padding: 10px 0;
+      margin: 0 0 0 15px;
+      line-height: 50px;
+    }
+    .side-navigation {
+      max-width: 940px;
+      margin: 0 auto;
+      height: 100%;
+
+      .is-table {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-item {
+          position: relative;
+          list-style: none;
+          padding: 20px 0;
+          margin: 0 1.5em;
+          a {
+            text-decoration: none;
+            color: $text-color;
+            transition: all 0.25s ease-in-out;
+            span &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 4px;
+              margin-bottom: -1px;
+              // background-color: $color-web-2;
+              background-color: transparent;
+              transition: all 0.25s ease-in-out;
+            }
+          }
+          &:hover a::after {
+            background-color: $color-web-2;
+            transition: all 0.25s ease-in-out;
+          }
+        }
+      }
+    }
+    .ribbon-menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 60px;
+      height: 80px;
+      margin: -5px 5px 0 0;
+      padding: 10px 0;
+      color: #fff;
+      background-color: $color-web-2;
+      text-align: center;
+      transition: all 0.25s ease-in-out;
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        padding-top: 20px;
+        height: 90px;
+      }
+      &::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        width: 0;
+        vertical-align: middle;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 60px;
+        height: 10px;
+        border-left: 30px solid $color-web-2;
+        border-right: 30px solid $color-web-2;
+        border-bottom: 10px solid;
+        border-bottom-color: transparent !important;
+      }
+    }
+  }
+}
