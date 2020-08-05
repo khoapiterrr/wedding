@@ -1,0 +1,29 @@
+.our-blog {
+  position: relative;
+  background-color: $bg-brown-light;
+
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      flex: 0 0 33.3333333%;
+      max-width: 33.3333333%;
+      padding: 20px;
+
+      &-photo {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .more-porter {
+    display: flex;
+    justify-content: center;
+    a {
+      text-decoration: none;
+    }
+  }
+}

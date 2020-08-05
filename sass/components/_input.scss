@@ -1,0 +1,36 @@
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='date'],
+input[type='number'],
+input[type='tel'],
+select,
+.select2-container .select2-choice {
+  height: 2.8em;
+}
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='date'],
+input[type='number'],
+input[type='tel'],
+select,
+.select2-container .select2-choice,
+textarea {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  max-width: 100%;
+}
+.input-block {
+  width: 100%;
+}
