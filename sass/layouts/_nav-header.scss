@@ -44,7 +44,7 @@
             text-transform: uppercase;
             color: $text-color;
             transition: all 0.25s ease-in-out;
-            span &::after {
+            &::after {
               content: '';
               position: absolute;
               bottom: 0;
