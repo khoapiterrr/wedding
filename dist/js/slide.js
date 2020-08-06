@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
   const sliders = document.getElementById('sliders').children;
   const nextSlider = document.getElementsByClassName('next-slide-item');
   let slidersInterval = setIntervalSlider(sliders, nextSlider, 3000);
-  console.log(slidersInterval, 'slidersInterval id');
   //setOnclick next slider
   Array.from(nextSlider).map((element) => {
     element.onclick = function () {
