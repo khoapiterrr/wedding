@@ -9,6 +9,10 @@
     top: 0;
     width: 100%;
   }
+  @include respond(phones) {
+    height: 50px;
+  }
+
   .side-header {
     position: relative;
     height: 100%;
@@ -22,6 +26,17 @@
       margin: 0 0 0 15px;
       line-height: 50px;
       z-index: 100;
+      @include respond(phones) {
+        width: 40px;
+        height: 45px;
+        img {
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
     }
     .side-navigation {
       max-width: 940px;
@@ -175,6 +190,28 @@
         border-right: 30px solid $color-web-2;
         border-bottom: 10px solid;
         border-bottom-color: transparent !important;
+      }
+    }
+
+    @include respond(phones) {
+      .ribbon-menu {
+        width: 40px;
+        height: 60px;
+        margin: -5px 5px 0 0;
+        padding: 10px 0;
+        &:hover,
+        &:focus {
+          padding-top: 15px;
+          height: 70px;
+        }
+        &::after {
+          width: 40px;
+          height: 6px;
+          border-left: 20px solid $color-web-2;
+          border-right: 20px solid $color-web-2;
+          border-bottom: 6px solid;
+          transform: translateY(-1px);
+        }
       }
     }
   }
