@@ -21,6 +21,7 @@
       padding: 10px 0;
       margin: 0 0 0 15px;
       line-height: 50px;
+      z-index: 100;
     }
     .side-navigation {
       max-width: 940px;
@@ -68,12 +69,80 @@
           }
         }
       }
+
+      // @include respond(laptops) {
+      //   max-width: 1185px;
+      // }
+
+      @include respond(tablets) {
+        .is-table {
+          display: block;
+          position: relative;
+          border: none;
+          outline: none;
+          background-color: white;
+          height: 100%;
+          text-align: right;
+          font-size: 1.3rem;
+          width: 85%;
+          margin: 0 auto;
+          cursor: pointer;
+          color: $text-color;
+
+          .screen-reader-text {
+            position: absolute;
+            right: 0;
+            transform: translate(-100%, 0);
+          }
+        }
+        & {
+          max-width: auto;
+        }
+        &__list {
+          opacity: 0;
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 85%;
+          margin: 0 auto;
+          background-color: #fff;
+          height: auto;
+          max-height: 50vh;
+          overflow: auto;
+          z-index: 10;
+          .menu {
+            display: flex;
+            flex-direction: column;
+
+            &-item {
+              display: block;
+              width: 100%;
+              border: 1px solid #e5e5e5;
+
+              a {
+                text-align: center;
+                display: inherit;
+                &::after {
+                  height: 0;
+                }
+              }
+            }
+          }
+
+          &.isActive {
+            opacity: 1;
+            display: block;
+          }
+        }
+      }
     }
     .ribbon-menu {
       position: absolute;
       top: 0;
       right: 0;
-      z-index: 1;
+      z-index: 100;
       width: 60px;
       height: 80px;
       margin: -5px 5px 0 0;

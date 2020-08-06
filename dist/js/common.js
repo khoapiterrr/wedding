@@ -36,7 +36,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
     minutes.innerText = getTime(min);
     seconds.innerText = getTime(sec);
   }, 1000);
-  console.log(1);
+  // reponsive
+  document.getElementById('isTable').onclick = function () {
+    document.getElementById('sideNav').classList.toggle('isActive');
+  };
 });
 
 const getTime = (time) => {
@@ -45,6 +48,7 @@ const getTime = (time) => {
 //mosanry
 window.onload = function () {
   var grid = document.querySelector('.grid-moment-wedding');
+  const listFilter = document.getElementsByClassName('filter-photos-item');
 
   var msnry = new Masonry(grid, {
     itemSelector: '.grid-item',
@@ -52,5 +56,31 @@ window.onload = function () {
     percentPosition: true,
     fitWidth: true,
     transitionDuration: 0,
+    // stagger: 500,
+  });
+
+  Array.from(listFilter).map((element) => {
+    element.onclick = function () {
+      if (element.classList.contains('isActive')) {
+        return;
+      }
+      clearActive(listFilter);
+      element.classList.add('isActive');
+      const filterClassName = `.grid-item:not(.${element.dataset.filterPhoto})`;
+      const listGrid = document.getElementsByClassName('grid-item');
+      const res = document.querySelectorAll(filterClassName);
+
+      if (element.dataset.filterPhoto === 'all') {
+        clearActive(listGrid);
+        msnry.layout();
+      } else {
+        clearActive(listGrid);
+        Array.from(res).map((x) => {
+          x.classList.add('isActive');
+        });
+        msnry.layout();
+        // setTimeout(() => msnry.layout(), 1000);
+      }
+    };
   });
 };

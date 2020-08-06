@@ -20,4 +20,14 @@
       margin-top: 1.2rem;
     }
   }
+  @include respond(tablets) {
+    .card-wedding-invitation {
+      width: 85%;
+    }
+  }
+  @include respond(phones) {
+    .card-wedding-invitation {
+      width: 100%;
+    }
+  }
 }

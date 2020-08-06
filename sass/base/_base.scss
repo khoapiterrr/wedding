@@ -12,7 +12,10 @@ body {
   color: #888;
   line-height: 1.85;
   position: relative;
-  font-size: 100%;
+  font-size: 14px;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .title-header {

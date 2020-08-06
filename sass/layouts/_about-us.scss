@@ -46,4 +46,23 @@
       order: 1;
     }
   }
+
+  @include respond(phones) {
+    .about-us {
+      flex-direction: column;
+
+      &-item {
+        &__content {
+          padding: 40px 25px;
+        }
+      }
+
+      .img-bride {
+        order: 1;
+      }
+      .about-bride {
+        order: 2;
+      }
+    }
+  }
 }
