@@ -1,3 +1,3 @@
 # wedding-coderX
 
-Demo : https://khoapiterrr.github.io/wedding-coderx/
+Demo : https://khoapiterrr.github.io/wedding
